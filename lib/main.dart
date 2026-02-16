@@ -56,20 +56,25 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
-      body: SingleChildScrollView(
-        controller: _scrollController,
-        child: const Column(
-          children: [
-            NavBar(),
-            HeroSection(),
-            ProblemSection(),
-            SolutionSection(),
-            FeaturesSection(),
-            HowItWorksSection(),
-            CTASection(),
-            FooterSection(),
-          ],
-        ),
+      body: Stack(
+        children: [
+          SingleChildScrollView(
+            controller: _scrollController,
+            child: const Column(
+              children: [
+                NavBar(),
+                HeroSection(),
+                ProblemSection(),
+                SolutionSection(),
+                FeaturesSection(),
+                HowItWorksSection(),
+                CTASection(),
+                FooterSection(),
+              ],
+            ),
+          ),
+          const FloatingSocialBar(),
+        ],
       ),
     );
   }
