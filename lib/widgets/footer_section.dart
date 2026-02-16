@@ -53,7 +53,7 @@ class FooterSection extends StatelessWidget {
             ),
           ),
           const SizedBox(height: AppDimensions.spacingMedium),
-          Text('© 2025 FluxDate. Tüm hakları saklıdır.', style: AppTextStyles.copyright),
+          Text('© 2026 FluxDate. Tüm hakları saklıdır.', style: AppTextStyles.copyright),
         ],
       ),
     );

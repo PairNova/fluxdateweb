@@ -156,9 +156,9 @@ class PrivacyPolicyPage extends StatelessWidget {
                       icon: Icons.child_care_rounded,
                       title: '8. Çocukların Gizliliği',
                       content:
-                          'FluxDate, 18 yaşın altındaki bireylere yönelik değildir. '
-                          'Bilerek 18 yaşından küçük kullanıcılardan kişisel veri toplamayız.\n\n'
-                          'Eğer 18 yaşından küçük bir kullanıcının veri sağladığını fark ederseniz, '
+                          'FluxDate, 16 yaşın altındaki bireylere yönelik değildir. '
+                          'Bilerek 16 yaşından küçük kullanıcılardan kişisel veri toplamayız.\n\n'
+                          'Eğer 16 yaşından küçük bir kullanıcının veri sağladığını fark ederseniz, '
                           'lütfen derhal **info@fluxdate.com** adresi üzerinden bizimle iletişime '
                           'geçin. Bu tür verileri en kısa sürede silmek için gerekli adımları '
                           'atacağız.\n\n'
@@ -479,7 +479,7 @@ class PrivacyPolicyPage extends StatelessWidget {
             ],
           ),
           const SizedBox(height: AppDimensions.spacingXLarge),
-          Text('© 2025 FluxDate. Tüm hakları saklıdır.',
+          Text('© 2026 FluxDate. Tüm hakları saklıdır.',
               style: AppTextStyles.copyright),
         ],
       ),
