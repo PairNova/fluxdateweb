@@ -19,21 +19,21 @@ class ProblemSection extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            'Modern Flört Dünyasının',
+            'Bu Sorunlar Sana da',
             style: AppTextStyles.sectionTitle(isWide),
             textAlign: TextAlign.center,
           ),
           ShaderMask(
             shaderCallback: (bounds) => AppColors.primaryGradient.createShader(bounds),
             child: Text(
-              'Kırık Denklemi',
+              'Tanıdık Geldi mi?',
               style: AppTextStyles.sectionTitle(isWide).copyWith(color: Colors.white),
               textAlign: TextAlign.center,
             ),
           ),
           const SizedBox(height: AppDimensions.spacingMedium),
           Text(
-            'Klasik flört uygulamaları seni yoruyor mu?',
+            'Diğer uygulamalarda yaşadığın hayal kırıklıklarını biliyoruz.',
             style: AppTextStyles.bodyLarge,
             textAlign: TextAlign.center,
           ),
@@ -45,18 +45,18 @@ class ProblemSection extends StatelessWidget {
             children: [
               _buildProblemCard(
                 icon: Icons.swipe,
-                title: 'Karar Felci',
-                description: 'Yüzlerce profil arasında kaybolmak, seçim yapmayı imkansızlaştırıyor.',
+                title: 'Sonsuz Kaydırma',
+                description: 'Yüzlerce profili kaydırıyorsun ama kimseyle gerçekten tanışamıyorsun.',
               ),
               _buildProblemCard(
                 icon: Icons.chat_bubble_outline,
-                title: 'Hayal Kırıklığı',
-                description: 'Aylar süren yazışmalar, buluşmada hayal kırıklığıyla sonuçlanıyor.',
+                title: 'Sahte Profiller',
+                description: 'Haftalarca yazışıyorsun ama buluştuğunda karşındaki bambaşka biri çıkıyor.',
               ),
               _buildProblemCard(
                 icon: Icons.lock_outline,
-                title: 'Sömürülme Hissi',
-                description: 'Eşleşme sonrası iletişim için ödeme yapmak zorunda kalmak.',
+                title: 'Her Şey Paralı',
+                description: 'Eşleştin ama mesaj atmak için bile ödeme yapmak zorundasın.',
               ),
             ],
           ),

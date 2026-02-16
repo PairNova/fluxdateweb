@@ -20,14 +20,14 @@ class FeaturesSection extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            'İki Farklı Deneyim,',
+            'Sana Özel İki Mod,',
             style: AppTextStyles.sectionTitle(isWide),
             textAlign: TextAlign.center,
           ),
           ShaderMask(
             shaderCallback: (bounds) => AppColors.primaryGradient.createShader(bounds),
             child: Text(
-              'Tek Felsefe',
+              'Sen Seç',
               style: AppTextStyles.sectionTitle(isWide).copyWith(color: Colors.white),
               textAlign: TextAlign.center,
             ),
@@ -41,7 +41,7 @@ class FeaturesSection extends StatelessWidget {
                         title: '60 Saniye',
                         subtitle: 'Görüntülü Eşleşme',
                         description:
-                            'Canlı ses, mimik ve anlık tepkiler. Sahte persona kurmak zorlaşır, gerçek kişiliğin öne çıkar.',
+                            'Karşındaki kişiyi canlı gör, sesini duy, mimiklerini oku. Sahte profil devri bitti!',
                         icon: Icons.videocam_rounded,
                         color: AppColors.secondary,
                       ),
@@ -52,7 +52,7 @@ class FeaturesSection extends StatelessWidget {
                         title: '1.5 Dakika',
                         subtitle: 'Yazılı Eşleşme',
                         description:
-                            'Ortak bir soru üzerinden başlayan sohbet. Sosyal kaygısı olanlar için ideal alternatif.',
+                            'Ortak bir soru üzerinden sohbete başla. Yazı ile kendini daha rahat ifade ediyorsan bu mod tam sana göre!',
                         icon: Icons.chat_rounded,
                         color: AppColors.primary,
                       ),
@@ -65,7 +65,7 @@ class FeaturesSection extends StatelessWidget {
                       title: '60 Saniye',
                       subtitle: 'Görüntülü Eşleşme',
                       description:
-                          'Canlı ses, mimik ve anlık tepkiler. Sahte persona kurmak zorlaşır, gerçek kişiliğin öne çıkar.',
+                          'Karşındaki kişiyi canlı gör, sesini duy, mimiklerini oku. Sahte profil devri bitti!',
                       icon: Icons.videocam_rounded,
                       color: AppColors.secondary,
                     ),
@@ -74,7 +74,7 @@ class FeaturesSection extends StatelessWidget {
                       title: '1.5 Dakika',
                       subtitle: 'Yazılı Eşleşme',
                       description:
-                          'Ortak bir soru üzerinden başlayan sohbet. Sosyal kaygısı olanlar için ideal alternatif.',
+                          'Ortak bir soru üzerinden sohbete başla. Yazı ile kendini daha rahat ifade ediyorsan bu mod tam sana göre!',
                       icon: Icons.chat_rounded,
                       color: AppColors.primary,
                     ),

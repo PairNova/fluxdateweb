@@ -19,14 +19,14 @@ class HowItWorksSection extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            'Beş Adımda',
+            'Nasıl Çalışır?',
             style: AppTextStyles.sectionTitle(isWide),
             textAlign: TextAlign.center,
           ),
           ShaderMask(
             shaderCallback: (bounds) => AppColors.primaryGradient.createShader(bounds),
             child: Text(
-              'Bilinçli Eşleşme',
+              'Çok Basit!',
               style: AppTextStyles.sectionTitle(isWide).copyWith(color: Colors.white),
               textAlign: TextAlign.center,
             ),
@@ -37,11 +37,11 @@ class HowItWorksSection extends StatelessWidget {
             runSpacing: AppDimensions.spacingXXLarge,
             alignment: WrapAlignment.center,
             children: const [
-              _StepCard(number: '1', title: 'Seçim', description: 'Görüntülü veya yazılı eşleşmeyi seç', icon: Icons.touch_app),
-              _StepCard(number: '2', title: 'Aday Arama', description: 'Sistem uygun adayları filtreler', icon: Icons.person_search),
-              _StepCard(number: '3', title: 'Etkileşim', description: '60 sn görüntülü veya 1.5 dk yazılı oda', icon: Icons.timer),
-              _StepCard(number: '4', title: 'Karar', description: 'Her iki taraf Evet veya Hayır der', icon: Icons.check_circle_outline),
-              _StepCard(number: '5', title: 'Sohbet', description: 'Karşılıklı Evet ile sınırsız mesajlaşma', icon: Icons.all_inclusive),
+              _StepCard(number: '1', title: 'Modunu Seç', description: 'Görüntülü mü yazlı mı? Sana uygun olanı seç', icon: Icons.touch_app),
+              _StepCard(number: '2', title: 'Eşleş', description: 'Sana uygun birini bul, hemen eşleş', icon: Icons.person_search),
+              _StepCard(number: '3', title: 'Tanış', description: '60 sn görüntülü veya 1.5 dk yazılı sohbet et', icon: Icons.timer),
+              _StepCard(number: '4', title: 'Karar Ver', description: 'Beğendin mi? Evet de, karşı taraf da Evet derse...', icon: Icons.check_circle_outline),
+              _StepCard(number: '5', title: 'Sohbete Başla!', description: 'Sınırsız mesajlaş, üstelik ücretsiz!', icon: Icons.all_inclusive),
             ],
           ),
         ],

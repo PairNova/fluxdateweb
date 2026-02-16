@@ -54,7 +54,7 @@ class HeroSection extends StatelessWidget {
             color: AppColors.primaryLight(0.1),
             borderRadius: BorderRadius.circular(AppDimensions.radiusLarge),
           ),
-          child: Text('Yeni Nesil Tanışma Deneyimi', style: AppTextStyles.badge),
+          child: Text('✨ Tanışmanın Yeni Yolu', style: AppTextStyles.badge),
         ),
         const SizedBox(height: AppDimensions.spacingXLarge),
         // Main Title
@@ -74,7 +74,7 @@ class HeroSection extends StatelessWidget {
         const SizedBox(height: AppDimensions.spacingXLarge),
         // Subtitle
         Text(
-          'Kısa, gerçek ve net temaslar üzerinden ilişki kurma deneyimi. Sadece 60 saniyede gerçek bağlantılar kur.',
+          'Sonsuz kaydırma yerine gerçek insanlarla tanış. 60 saniyelik görüntülü veya yazılı sohbetle karşındaki kişiyi hemen tanı!',
           style: AppTextStyles.bodyLarge,
           textAlign: isWide ? TextAlign.left : TextAlign.center,
         ),

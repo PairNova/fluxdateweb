@@ -25,14 +25,14 @@ class SolutionSection extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            'Çözüm: Nicelik Yerine',
+            'FluxDate ile Tanışmak',
             style: AppTextStyles.sectionTitleWhite(isWide).copyWith(
               color: Colors.white.withOpacity(0.9),
             ),
             textAlign: TextAlign.center,
           ),
           Text(
-            'Nitelik ve Gerçek Temas',
+            'Çok Daha Kolay',
             style: AppTextStyles.sectionTitleWhite(isWide),
             textAlign: TextAlign.center,
           ),
@@ -40,7 +40,7 @@ class SolutionSection extends StatelessWidget {
           Container(
             constraints: const BoxConstraints(maxWidth: 700),
             child: Text(
-              'FluxDate, sonsuz seçenekler sunmak yerine, kısa, net ve kontrollü temas anları yaratarak hızlı ve bilinçli kararlar vermeni sağlıyor.',
+              'Profil kaydırmak yerine karşındaki insanı 60 saniyede gerçekten tanı. Görüntülü veya yazılı sohbetle anında bağlantı kur.',
               style: AppTextStyles.bodyLarge.copyWith(
                 color: Colors.white.withOpacity(0.9),
               ),
@@ -58,7 +58,7 @@ class SolutionSection extends StatelessWidget {
               borderRadius: BorderRadius.circular(AppDimensions.radiusMedium),
             ),
             child: Text(
-              '"Gerçek bir bağlantı, bir dakikada kendini belli eder."',
+              '"60 saniye yeter, gerçek biriyle tanışmak için."',
               style: AppTextStyles.quote,
               textAlign: TextAlign.center,
             ),

@@ -25,7 +25,7 @@ class CTASection extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            'Eşleşme Sonrası Mesajlaşma',
+            'Eşleştin mi? Mesajlaş!',
             style: AppTextStyles.sectionTitleWhite(isWide),
             textAlign: TextAlign.center,
           ),
@@ -43,7 +43,7 @@ class CTASection extends StatelessWidget {
           Container(
             constraints: const BoxConstraints(maxWidth: 600),
             child: Text(
-              'Para, kurulan ilişkiyi kilitlemek için değil. Sadece daha fazla deneme hakkı içindir.',
+              'FluxDate\'de eşleştikten sonra mesajlaşmak tamamen ücretsiz. Para engel değil, bağlantı kurmanın önünde!',
               style: AppTextStyles.bodyLarge.copyWith(
                 color: Colors.white.withOpacity(0.9),
               ),
@@ -73,7 +73,7 @@ class CTASection extends StatelessWidget {
                 const Icon(Icons.notifications_active, color: AppColors.primary),
                 const SizedBox(width: AppDimensions.spacingSmall),
                 Text(
-                  'Lansmandan Haberdar Ol',
+                  'Beni Haberdar Et 🔔',
                   style: AppTextStyles.stepTitle.copyWith(color: AppColors.primary),
                 ),
               ],
