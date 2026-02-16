@@ -155,7 +155,7 @@ class _AnimatedPhoneMockupState extends State<AnimatedPhoneMockup>
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: AppColors.secondary.withValues(alpha: 1.15 - _pulseAnimation.value),
+                  color: AppColors.secondary.withOpacity(1.15 - _pulseAnimation.value),
                   width: 2,
                 ),
               ),
@@ -268,8 +268,8 @@ class _AnimatedPhoneMockupState extends State<AnimatedPhoneMockup>
       height: AppDimensions.actionButtonSize,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: color.withValues(alpha: 0.15),
-        border: Border.all(color: color.withValues(alpha: 0.3), width: 2),
+        color: color.withOpacity(0.15),
+        border: Border.all(color: color.withOpacity(0.3), width: 2),
       ),
       child: Icon(icon, color: color, size: AppDimensions.iconMedium),
     );

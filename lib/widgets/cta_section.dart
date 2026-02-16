@@ -45,7 +45,7 @@ class CTASection extends StatelessWidget {
             child: Text(
               'Para, kurulan ilişkiyi kilitlemek için değil. Sadece daha fazla deneme hakkı içindir.',
               style: AppTextStyles.bodyLarge.copyWith(
-                color: Colors.white.withValues(alpha: 0.9),
+                color: Colors.white.withOpacity(0.9),
               ),
               textAlign: TextAlign.center,
             ),
@@ -61,7 +61,7 @@ class CTASection extends StatelessWidget {
               borderRadius: BorderRadius.circular(AppDimensions.radiusPhone),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.2),
+                  color: Colors.black.withOpacity(0.2),
                   blurRadius: 30,
                   offset: const Offset(0, 10),
                 ),

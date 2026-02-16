@@ -24,7 +24,11 @@ class FluxDateApp extends StatelessWidget {
         textTheme: GoogleFonts.interTextTheme(),
         useMaterial3: true,
       ),
-      home: const LandingPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const LandingPage(),
+        '/privacy-policy': (context) => const PrivacyPolicyPage(),
+      },
     );
   }
 }

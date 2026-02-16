@@ -27,7 +27,7 @@ class SolutionSection extends StatelessWidget {
           Text(
             'Çözüm: Nicelik Yerine',
             style: AppTextStyles.sectionTitleWhite(isWide).copyWith(
-              color: Colors.white.withValues(alpha: 0.9),
+              color: Colors.white.withOpacity(0.9),
             ),
             textAlign: TextAlign.center,
           ),
@@ -42,7 +42,7 @@ class SolutionSection extends StatelessWidget {
             child: Text(
               'FluxDate, sonsuz seçenekler sunmak yerine, kısa, net ve kontrollü temas anları yaratarak hızlı ve bilinçli kararlar vermeni sağlıyor.',
               style: AppTextStyles.bodyLarge.copyWith(
-                color: Colors.white.withValues(alpha: 0.9),
+                color: Colors.white.withOpacity(0.9),
               ),
               textAlign: TextAlign.center,
             ),
@@ -54,7 +54,7 @@ class SolutionSection extends StatelessWidget {
               vertical: AppDimensions.spacingLarge,
             ),
             decoration: BoxDecoration(
-              color: Colors.white.withValues(alpha: 0.15),
+              color: Colors.white.withOpacity(0.15),
               borderRadius: BorderRadius.circular(AppDimensions.radiusMedium),
             ),
             child: Text(

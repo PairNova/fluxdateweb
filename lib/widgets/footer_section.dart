@@ -38,7 +38,21 @@ class FooterSection extends StatelessWidget {
           ),
           const SizedBox(height: AppDimensions.spacingXLarge),
           Text('#RastlantıdanBilinçliSeçime', style: AppTextStyles.hashtag),
-          const SizedBox(height: AppDimensions.spacingXXLarge),
+          const SizedBox(height: AppDimensions.spacingXLarge),
+          MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              onTap: () => Navigator.of(context).pushNamed('/privacy-policy'),
+              child: Text(
+                'Gizlilik Politikası',
+                style: AppTextStyles.copyright.copyWith(
+                  decoration: TextDecoration.underline,
+                  decorationColor: Colors.white54,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: AppDimensions.spacingMedium),
           Text('© 2025 FluxDate. Tüm hakları saklıdır.', style: AppTextStyles.copyright),
         ],
       ),

@@ -95,9 +95,9 @@ class FeaturesSection extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(AppDimensions.spacingSection),
       decoration: BoxDecoration(
-        color: color.withValues(alpha: 0.05),
+        color: color.withOpacity(0.05),
         borderRadius: BorderRadius.circular(AppDimensions.radiusXXLarge),
-        border: Border.all(color: color.withValues(alpha: 0.2)),
+        border: Border.all(color: color.withOpacity(0.2)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -106,7 +106,7 @@ class FeaturesSection extends StatelessWidget {
             width: AppDimensions.featureIconContainer,
             height: AppDimensions.featureIconContainer,
             decoration: BoxDecoration(
-              color: color.withValues(alpha: 0.15),
+              color: color.withOpacity(0.15),
               borderRadius: BorderRadius.circular(AppDimensions.radiusXLarge),
             ),
             child: Icon(icon, color: color, size: AppDimensions.iconXLarge),

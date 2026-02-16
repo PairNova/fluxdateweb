@@ -47,11 +47,11 @@ class AppColors {
 
   // Opacity helpers
   static Color primaryLight([double opacity = 0.1]) =>
-      primary.withValues(alpha: opacity);
+      primary.withOpacity(opacity);
 
   static Color secondaryLight([double opacity = 0.1]) =>
-      secondary.withValues(alpha: opacity);
+      secondary.withOpacity(opacity);
 
   static Color textDarkLight([double opacity = 0.5]) =>
-      textDark.withValues(alpha: opacity);
+      textDark.withOpacity(opacity);
 }
