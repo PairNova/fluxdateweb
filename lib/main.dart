@@ -30,6 +30,7 @@ class FluxDateApp extends StatelessWidget {
       routes: {
         '/': (context) => const LandingPage(),
         '/privacy-policy': (context) => const PrivacyPolicyPage(),
+        '/support': (context) => const SupportPage(),
       },
     );
   }

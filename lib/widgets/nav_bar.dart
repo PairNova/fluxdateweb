@@ -38,18 +38,41 @@ class NavBar extends StatelessWidget {
               Text('FluxDate', style: AppTextStyles.logo),
             ],
           ),
-          // CTA Button
+          // Nav Links + CTA Button
           if (isWide)
-            Container(
-              padding: const EdgeInsets.symmetric(
-                horizontal: AppDimensions.spacingXXLarge - 2,
-                vertical: AppDimensions.fontSizeBody,
-              ),
-              decoration: BoxDecoration(
-                gradient: AppColors.primaryGradient,
-                borderRadius: BorderRadius.circular(AppDimensions.radiusRound),
-              ),
-              child: Text('Uygulamayı İndir', style: AppTextStyles.buttonPrimary),
+            Row(
+              children: [
+                MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: GestureDetector(
+                    onTap: () => Navigator.of(context).pushNamed('/support'),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: AppDimensions.spacingLarge,
+                      ),
+                      child: Text(
+                        'Destek',
+                        style: AppTextStyles.bodySmall.copyWith(
+                          color: AppColors.textDark,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: AppDimensions.spacingSmall),
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: AppDimensions.spacingXXLarge - 2,
+                    vertical: AppDimensions.fontSizeBody,
+                  ),
+                  decoration: BoxDecoration(
+                    gradient: AppColors.primaryGradient,
+                    borderRadius: BorderRadius.circular(AppDimensions.radiusRound),
+                  ),
+                  child: Text('Uygulamayı İndir', style: AppTextStyles.buttonPrimary),
+                ),
+              ],
             ),
         ],
       ),

@@ -130,22 +130,42 @@ class FooterSection extends StatelessWidget {
               );
             }).toList(),
           ),
-          const SizedBox(height: AppDimensions.spacingXLarge),
-          // Privacy Policy Link
-          MouseRegion(
-            cursor: SystemMouseCursors.click,
-            child: GestureDetector(
-              onTap: () => Navigator.of(context).pushNamed('/privacy-policy'),
-              child: Text(
-                'Gizlilik Politikası',
-                style: AppTextStyles.copyright.copyWith(
-                  decoration: TextDecoration.underline,
-                  decorationColor: Colors.white54,
+          // Footer Links
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  onTap: () => Navigator.of(context).pushNamed('/privacy-policy'),
+                  child: Text(
+                    'Gizlilik Politikası',
+                    style: AppTextStyles.copyright.copyWith(
+                      decoration: TextDecoration.underline,
+                      decorationColor: Colors.white54,
+                    ),
+                  ),
                 ),
               ),
-            ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                child: Text('•', style: AppTextStyles.copyright),
+              ),
+              MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  onTap: () => Navigator.of(context).pushNamed('/support'),
+                  child: Text(
+                    'Destek',
+                    style: AppTextStyles.copyright.copyWith(
+                      decoration: TextDecoration.underline,
+                      decorationColor: Colors.white54,
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
-          const SizedBox(height: AppDimensions.spacingMedium),
           Text('© 2026 FluxDate. Tüm hakları saklıdır.',
               style: AppTextStyles.copyright),
         ],
